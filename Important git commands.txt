@@ -1,0 +1,75 @@
+git init
+# Start tracking a project directory with Git (initialize a Git repository)
+
+git status
+# Check the status of files (Modified, Untracked, Staged, or Clean)
+
+git add file_name
+# Stage a specific modified file
+
+git add .
+# Stage all modified and new files at once
+
+git commit -m "Your commit message"
+# Commit all staged files with a meaningful message
+
+git diff
+# Compare changes between the working directory and the last staged state
+
+git diff --staged
+# Compare staged changes with the last committed version
+
+git rm --cached file_name
+# Unstage a specific staged file (without deleting it from the working directory)
+
+git rm --cached .
+# Unstage all staged files
+
+git checkout file_name
+# Undo changes in a file (revert it to last staged or committed state)
+
+git checkout .
+# Undo changes in all files (revert working directory to last staged or committed state)
+
+git branch
+# List all local branches
+
+git branch branch_name
+# Create a new branch
+
+git checkout branch_name
+# Switch to another branch
+
+# Merging a feature branch into main:
+git checkout main
+# Switch to the main branch
+
+git merge branch_name
+# Merge the specified feature branch into the main branch
+
+
+git merge branch_name
+# Merge the specified feature branch into the main branch
+🔄 2. Team workflow (step-by-step):
+Step	Developer Action
+1️⃣	Clone the repo: git clone <repo-url>
+git clone https://github.com/org/project.git
+cd project
+
+
+2️⃣	Create a new branch for your task: git checkout -b feature/login
+git checkout -b feature/my-task
+
+3️⃣	Work on your code, commit changes
+git add .
+git commit -m "Implement login feature"
+
+4️⃣	Push the branch: git push origin feature/login
+git push origin feature/my-task
+
+5️⃣	Create a Pull Request (PR) on GitHub
+
+6️⃣	Another team member reviews, gives feedback, and merges your PR
+✅	After merge, you pull the latest main again to stay updated
+git checkout main
+git pull origin main
