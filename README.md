@@ -56,3 +56,18 @@ git checkout main
 
 git merge branch_name
 # Merge the specified branch into main
+
+
+
+🔄 2. Team workflow (step-by-step):
+
+1️⃣	Clone the repo: git clone <repo-url>  
+2️⃣	Create a new branch for your task: git checkout -b feature/login  
+3️⃣	Work on your code, commit changes  
+4️⃣	Push the branch: git push origin feature/login  
+5️⃣	Create a Pull Request (PR) on GitHub   [Watch on YouTube: How to create the PR](https://youtu.be/nCKdihvneS0?si=6kY9BlNhbCX7lq_C)
+6️⃣	Another team member reviews, gives feedback, and merges your PR  
+✅	After merge, you pull the latest main again to stay updated  
+git checkout main  
+git pull origin main  
+
