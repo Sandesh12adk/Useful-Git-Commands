@@ -61,21 +61,21 @@ git merge branch_name
 
 1️⃣ Clone the repo:
 git clone <repo-url>
-
 2️⃣ Create a new branch for your task:
-git checkout -b feature/login
-
+git checkout -b feature
 3️⃣ Work on your code, commit changes
-
 4️⃣ Push the branch:
 git push origin feature=
-
 5️⃣ Create a Pull Request (PR) on GitHub
 📺 YouTube guide: https://youtu.be/nCKdihvneS0?si=6kY9BlNhbCX7lq_C
-
 6️⃣ Another team member reviews, gives feedback, and merges your PR
-
 ✅ After merge, you pull the latest main again to stay updated:
 git checkout main
 git pull origin main
 
+Best Practices
+Commit small, logical changes frequently
+Write clear commit messages
+Pull latest changes before pushing
+Use descriptive branch names
+Always review PRs before merging
